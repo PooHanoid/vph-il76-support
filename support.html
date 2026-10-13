@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Поддержка · Support — ВПХ Ил-76</title>
+<meta name="description" content="Поддержка приложения «ВПХ Ил-76»: что оно делает, как пользоваться, вопросы и ответы, связь.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f4f6fa; --card: #ffffff; --ink: #1d2430; --muted: #6b7280; --line: #e3e7ee;
+    --accent: #2f6fed;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #12161d; --card: #1b212b; --ink: #e8ecf3; --muted: #9aa4b2; --line: #2a3240; --accent: #6f9bff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink);
+         -webkit-text-size-adjust: 100%; }
+  main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+  header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 16px;
+           border-bottom: 1px solid var(--line); padding-bottom: 12px; margin-bottom: 24px; }
+  header h1 { font-size: 18px; margin: 0; font-weight: 600; }
+  nav { font-size: 14px; color: var(--muted); }
+  a { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; margin: 0 0 24px; }
+  h2 { font-size: 24px; line-height: 1.25; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 20px; }
+  h3 { font-size: 17px; margin: 24px 0 8px; }
+  p, li { font-size: 16px; line-height: 1.55; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 22px; }
+  li { margin: 4px 0; }
+  code { font: 14px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; overflow-wrap: anywhere; }
+  .email { font-size: 18px; font-weight: 600; overflow-wrap: anywhere; user-select: all; -webkit-user-select: all; }
+  footer { color: var(--muted); font-size: 13px; text-align: center; line-height: 1.6; }
+  @media (max-width: 480px) { .card { padding: 18px 16px; } h2 { font-size: 21px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>ВПХ Ил-76</h1>
+    <nav><a href="#ru">Русский</a> · <a href="#en">English</a> · <a href="privacy.html">Конфиденциальность / Privacy</a></nav>
+  </header>
+  <section id="ru" class="card">
+    <h2>Поддержка</h2>
+
+    <h3>Что делает приложение</h3>
+    <p>«ВПХ Ил-76» рассчитывает взлётно-посадочные характеристики самолёта Ил-76ТД с двигателями Д-30КП второй серии по номограммам РЛЭ: взлёт (в том числе на номинальном режиме по Приложению 7), посадку, максимальные взлётный и посадочный веса, скорости и градиенты набора высоты с поправками на ветер, уклон и состояние ВПП.</p>
+    <p>Приложение не сертифицировано. Результаты справочные; при расхождении руководствуйтесь РЛЭ.</p>
+    <p>Нужен iPhone или iPad с iOS 16.4 или новее. Интерфейс — на русском языке. Интернет не нужен.</p>
+
+    <h3>Как пользоваться</h3>
+    <ul>
+      <li>Заполните поля и нажмите «Расчёт». Нажатие на заполненное поле очищает его для нового ввода; если оставить поле пустым, вернётся прежнее значение.</li>
+      <li>Дробную часть можно вводить через точку или запятую.</li>
+      <li>Ветер: «ннн/сс» — направление и скорость (будут рассчитаны продольная и боковая составляющие) или «±сс» — продольный ветер («−» — попутный).</li>
+      <li>В режиме QNH сначала введите превышение ВПП: без него QNH не пересчитать в барометрическую высоту.</li>
+      <li>Чтобы увидеть пункт и фигуру РЛЭ и условия расчёта параметра, нажмите и удерживайте его значение.</li>
+    </ul>
+
+    <h3>Вопросы и ответы</h3>
+    <p><b>Что значит «Вне РЛЭ»?</b> Результат получен за пределами ограничений или номограмм РЛЭ: барометрическая высота выше 1800 м, температура за полем номограмм, попутный ветер больше 5 м/с, вес или дистанция за шкалой графика. Расчёт выполнен по тем же правилам, но такой результат требует особой осторожности.</p>
+    <p><b>Почему кнопка «Расчёт» серая?</b> Заполнены не все поля, или в режиме QNH не введено превышение ВПП.</p>
+    <p><b>Почему расчёт не выполняется?</b> Значение вышло за жёсткий предел (например, барометрическая высота выше 2700 м на взлёте или 3000 м на посадке, вес, температура или уклон вне допустимых) — приложение покажет, какое именно.</p>
+    <p><b>Почему продолженный взлёт бывает короче взлётной дистанции?</b> Потребная взлётная дистанция дана с коэффициентом 1,15, дистанция продолженного взлёта — без коэффициентов.</p>
+
+    <h3>Связь</h3>
+    <p>Вопросы, ошибки и пожелания присылайте на почту ниже — проще всего кнопкой «Написать в поддержку» на вкладке Info: письмо уже будет содержать версию приложения и модель устройства.</p>
+  </section>
+
+  <section id="en" class="card">
+    <h2>Support</h2>
+
+    <h3>What the app does</h3>
+    <p>«ВПХ Ил-76» calculates the takeoff and landing performance of the Il-76TD with second-series D-30KP engines from the charts of the aircraft flight manual (РЛЭ): takeoff (including reduced-thrust takeoff per Appendix 7), landing, maximum takeoff and landing weights, speeds and climb gradients, with corrections for wind, runway slope and runway condition.</p>
+    <p>The app is not certified. Results are for reference only; where they differ, the flight manual prevails.</p>
+    <p>Requires an iPhone or iPad with iOS 16.4 or later. The interface is in Russian. No internet connection is needed.</p>
+
+    <h3>Questions and answers</h3>
+    <p><b>What does «Вне РЛЭ» mean?</b> The result lies outside the limits or charts of the flight manual: pressure altitude above 1800 m, temperature outside the chart field, tailwind above 5 m/s, weight or distance beyond a chart scale. It is calculated by the same rules, but needs extra care.</p>
+    <p><b>Why is «Расчёт» grey?</b> Some fields are empty, or in QNH mode the runway elevation has not been entered.</p>
+
+    <h3>Contact</h3>
+    <p>Send questions, bug reports and suggestions to the address below — the «Написать в поддержку» button on the Info tab prepares a message with the app version and device model.</p>
+  </section>
+  <section id="contact" class="card">
+    <h2>Связь · Contact</h2>
+    <p>Вопросы о приложении и о конфиденциальности · Questions about the app or privacy:</p>
+    <p class="email"><a class="mail">gentlemans.apps@icloud.com</a></p>
+  </section>
+  <footer>ВПХ Ил-76 · <a href="privacy.html">Конфиденциальность / Privacy</a></footer>
+</main>
+<script>
+  // Адрес записан один раз — текстом ссылки; ссылка mailto: строится из него.
+  Array.prototype.forEach.call(document.querySelectorAll('a.mail'), function (a) {
+    a.href = 'mailto:' + a.textContent.trim();
+  });
+</script>
+</body>
+</html>
